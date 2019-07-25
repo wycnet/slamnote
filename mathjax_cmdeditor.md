@@ -360,8 +360,9 @@ $$\sum_{i=1}^n \frac{1}{i^2} \quad and \quad \prod_{i=1}^n \frac{1}{i^2} \quad a
 |\it|意大利体|$\it{Sample}$|\Bbb|黑板粗体|$\Bbb{SAMPLE}$|
 |\bf|粗体|$\bf{Sample}$|\mit|数学斜体|$\mit{SAMPLE}$|
 |\sf|等线体|$\sf{Sample}$|\scr|手写体|$\scr{SAMPLE}$|
-|\tt|打字机体|$\tt{Sample}$|
+|\tt|打字机体|$\tt{Sample}$| \bm| 加粗(字体不变)|$\bm{Sample}$|
 |\frak|旧德式字体|$\frak{Sample}$|
+
 
 
 转换字体十分常用，例如在积分中：
