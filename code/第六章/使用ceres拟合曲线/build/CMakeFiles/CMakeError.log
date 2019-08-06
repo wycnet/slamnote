@@ -1,0 +1,55 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/wyc/桌面/视觉slam14讲笔记/code/第六章/使用ceres拟合曲线/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_adedd/fast"
+/usr/bin/make -f CMakeFiles/cmTC_adedd.dir/build.make CMakeFiles/cmTC_adedd.dir/build
+make[1]: Entering directory '/home/wyc/桌面/视觉slam14讲笔记/code/第六章/使用ceres拟合曲线/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_adedd.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_adedd.dir/CheckSymbolExists.c.o   -c /home/wyc/桌面/视觉slam14讲笔记/code/第六章/使用ceres拟合曲线/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_adedd
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_adedd.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_adedd.dir/CheckSymbolExists.c.o  -o cmTC_adedd -rdynamic 
+CMakeFiles/cmTC_adedd.dir/CheckSymbolExists.c.o：在函数‘main’中：
+CheckSymbolExists.c:(.text+0x16)：对‘pthread_create’未定义的引用
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_adedd.dir/build.make:97: recipe for target 'cmTC_adedd' failed
+make[1]: *** [cmTC_adedd] Error 1
+make[1]: Leaving directory '/home/wyc/桌面/视觉slam14讲笔记/code/第六章/使用ceres拟合曲线/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_adedd/fast' failed
+make: *** [cmTC_adedd/fast] Error 2
+
+File /home/wyc/桌面/视觉slam14讲笔记/code/第六章/使用ceres拟合曲线/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/wyc/桌面/视觉slam14讲笔记/code/第六章/使用ceres拟合曲线/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_55c85/fast"
+/usr/bin/make -f CMakeFiles/cmTC_55c85.dir/build.make CMakeFiles/cmTC_55c85.dir/build
+make[1]: Entering directory '/home/wyc/桌面/视觉slam14讲笔记/code/第六章/使用ceres拟合曲线/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_55c85.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_55c85.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_55c85
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_55c85.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_55c85.dir/CheckFunctionExists.c.o  -o cmTC_55c85 -rdynamic -lpthreads 
+/usr/bin/ld: 找不到 -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_55c85.dir/build.make:97: recipe for target 'cmTC_55c85' failed
+make[1]: *** [cmTC_55c85] Error 1
+make[1]: Leaving directory '/home/wyc/桌面/视觉slam14讲笔记/code/第六章/使用ceres拟合曲线/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_55c85/fast' failed
+make: *** [cmTC_55c85/fast] Error 2
+
+
